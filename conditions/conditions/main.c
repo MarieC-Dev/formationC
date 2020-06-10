@@ -57,19 +57,21 @@ int main(int argc, const char * argv[]) {
             printf("Majeur vaut : %d \n", majeur); */
             // S'il est supérieur ou égal à 18 majeur vaut 1. 20 est plus grand que 18 donc majeur. Si inférieur ou égal vaut 0 puisque 20 n'est pas inférieur à 18
         //
-        
-        int age2 = 0;
-        int majeur2 = 1;
-        int mineur2 = 0;
-
-        printf("Quel age avez-vous ? \n");
-        int resultat = scanf("%d", &age2);
-        
-        if (resultat >= 18) {
-            printf("Majeur vaut %d. Vous êtes majeur. \n", majeur2);
-        } else {
-            printf("Majeur vaut %d. Vous êtes mineur. \n", mineur2);
-        }
+    
+        // Test boolean age utilisateur
+            int age2 = 0;
+            int majeur2 = 1;
+            int mineur2 = 0;
+            
+            printf("Quel âge avez-vous ? \n");
+            scanf("%d", &age2);
+            
+            if (age2 >= 18) {
+                printf("Boolean vaut %d. Vous êtes majeur. \n", majeur2);
+            } else {
+                printf("Boolean vaut %d. Vous êtes mineur. \n", mineur2);
+            }
+        //
     
     
         /*
