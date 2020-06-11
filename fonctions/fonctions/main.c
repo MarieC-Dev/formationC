@@ -18,7 +18,6 @@
         // OU en une ligne
         // return 3 * nbre;
     }
-
 // =============================================================================================================================
 
 int main(int argc, const char * argv[]) {
@@ -28,7 +27,7 @@ int main(int argc, const char * argv[]) {
     printf("Entrez un chiffre : \n");
     scanf("%d", &nbreBetween);
     
-    // Appel de la fonction
+    // Appel de la fonction (variableStockeuse = fonction(variableEntrée ou nombre sur lequel elle travaille)
     nbreTriple = triple(nbreBetween);
     printf("Le triple de votre chiffre est %d. \n", nbreTriple);
     //
@@ -37,9 +36,7 @@ int main(int argc, const char * argv[]) {
     return 0;
     
     
-    
-    
-    
+
 // FONCTIONS
     // Créer une fonction
     /*
