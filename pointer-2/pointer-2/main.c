@@ -40,5 +40,5 @@ void triplePointeur(int *pointeurNbre) {
 
 // doublePointeur
 void doublePointeur(int *pointeurChiffre) {
-    *pointeurChiffre *= 2;
+    *pointeurChiffre *= 3;
 }
