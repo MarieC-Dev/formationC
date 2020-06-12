@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		020476672492C5B5000BDDEA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 020476662492C5B5000BDDEA /* main.c */; };
-		0204766F2492DA67000BDDEA /* prototype.c in Sources */ = {isa = PBXBuildFile; fileRef = 0204766E2492DA67000BDDEA /* prototype.c */; };
+		02B9AEBB2493F87C00994CF4 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 02B9AEBA2493F87C00994CF4 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		020476612492C5B5000BDDEA /* CopyFiles */ = {
+		02B9AEB52493F87C00994CF4 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,14 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		020476632492C5B5000BDDEA /* prog-modulaire */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "prog-modulaire"; sourceTree = BUILT_PRODUCTS_DIR; };
-		020476662492C5B5000BDDEA /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		0204766D2492DA67000BDDEA /* prototype.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prototype.h; sourceTree = "<group>"; };
-		0204766E2492DA67000BDDEA /* prototype.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = prototype.c; sourceTree = "<group>"; };
+		02B9AEB72493F87C00994CF4 /* pointer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pointer; sourceTree = BUILT_PRODUCTS_DIR; };
+		02B9AEBA2493F87C00994CF4 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		020476602492C5B5000BDDEA /* Frameworks */ = {
+		02B9AEB42493F87C00994CF4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,67 +38,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0204765A2492C5B5000BDDEA = {
+		02B9AEAE2493F87C00994CF4 = {
 			isa = PBXGroup;
 			children = (
-				020476652492C5B5000BDDEA /* prog-modulaire */,
-				020476642492C5B5000BDDEA /* Products */,
+				02B9AEB92493F87C00994CF4 /* pointer */,
+				02B9AEB82493F87C00994CF4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		020476642492C5B5000BDDEA /* Products */ = {
+		02B9AEB82493F87C00994CF4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				020476632492C5B5000BDDEA /* prog-modulaire */,
+				02B9AEB72493F87C00994CF4 /* pointer */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		020476652492C5B5000BDDEA /* prog-modulaire */ = {
+		02B9AEB92493F87C00994CF4 /* pointer */ = {
 			isa = PBXGroup;
 			children = (
-				020476662492C5B5000BDDEA /* main.c */,
-				0204766D2492DA67000BDDEA /* prototype.h */,
-				0204766E2492DA67000BDDEA /* prototype.c */,
+				02B9AEBA2493F87C00994CF4 /* main.c */,
 			);
-			path = "prog-modulaire";
+			path = pointer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		020476622492C5B5000BDDEA /* prog-modulaire */ = {
+		02B9AEB62493F87C00994CF4 /* pointer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0204766A2492C5B5000BDDEA /* Build configuration list for PBXNativeTarget "prog-modulaire" */;
+			buildConfigurationList = 02B9AEBE2493F87C00994CF4 /* Build configuration list for PBXNativeTarget "pointer" */;
 			buildPhases = (
-				0204765F2492C5B5000BDDEA /* Sources */,
-				020476602492C5B5000BDDEA /* Frameworks */,
-				020476612492C5B5000BDDEA /* CopyFiles */,
+				02B9AEB32493F87C00994CF4 /* Sources */,
+				02B9AEB42493F87C00994CF4 /* Frameworks */,
+				02B9AEB52493F87C00994CF4 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "prog-modulaire";
-			productName = "prog-modulaire";
-			productReference = 020476632492C5B5000BDDEA /* prog-modulaire */;
+			name = pointer;
+			productName = pointer;
+			productReference = 02B9AEB72493F87C00994CF4 /* pointer */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0204765B2492C5B5000BDDEA /* Project object */ = {
+		02B9AEAF2493F87C00994CF4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Marie Costa";
 				TargetAttributes = {
-					020476622492C5B5000BDDEA = {
+					02B9AEB62493F87C00994CF4 = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
-			buildConfigurationList = 0204765E2492C5B5000BDDEA /* Build configuration list for PBXProject "prog-modulaire" */;
+			buildConfigurationList = 02B9AEB22493F87C00994CF4 /* Build configuration list for PBXProject "pointer" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,30 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 0204765A2492C5B5000BDDEA;
-			productRefGroup = 020476642492C5B5000BDDEA /* Products */;
+			mainGroup = 02B9AEAE2493F87C00994CF4;
+			productRefGroup = 02B9AEB82493F87C00994CF4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				020476622492C5B5000BDDEA /* prog-modulaire */,
+				02B9AEB62493F87C00994CF4 /* pointer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0204765F2492C5B5000BDDEA /* Sources */ = {
+		02B9AEB32493F87C00994CF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0204766F2492DA67000BDDEA /* prototype.c in Sources */,
-				020476672492C5B5000BDDEA /* main.c in Sources */,
+				02B9AEBB2493F87C00994CF4 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		020476682492C5B5000BDDEA /* Debug */ = {
+		02B9AEBC2493F87C00994CF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -190,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		020476692492C5B5000BDDEA /* Release */ = {
+		02B9AEBD2493F87C00994CF4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -241,7 +235,7 @@
 			};
 			name = Release;
 		};
-		0204766B2492C5B5000BDDEA /* Debug */ = {
+		02B9AEBF2493F87C00994CF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -249,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		0204766C2492C5B5000BDDEA /* Release */ = {
+		02B9AEC02493F87C00994CF4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -260,25 +254,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0204765E2492C5B5000BDDEA /* Build configuration list for PBXProject "prog-modulaire" */ = {
+		02B9AEB22493F87C00994CF4 /* Build configuration list for PBXProject "pointer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				020476682492C5B5000BDDEA /* Debug */,
-				020476692492C5B5000BDDEA /* Release */,
+				02B9AEBC2493F87C00994CF4 /* Debug */,
+				02B9AEBD2493F87C00994CF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0204766A2492C5B5000BDDEA /* Build configuration list for PBXNativeTarget "prog-modulaire" */ = {
+		02B9AEBE2493F87C00994CF4 /* Build configuration list for PBXNativeTarget "pointer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0204766B2492C5B5000BDDEA /* Debug */,
-				0204766C2492C5B5000BDDEA /* Release */,
+				02B9AEBF2493F87C00994CF4 /* Debug */,
+				02B9AEC02493F87C00994CF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0204765B2492C5B5000BDDEA /* Project object */;
+	rootObject = 02B9AEAF2493F87C00994CF4 /* Project object */;
 }
