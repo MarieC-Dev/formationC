@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Un tableau peut-être considéré comme un pointeur
 int main(int argc, const char * argv[]) {
     
     // Définir un tableau de 4 int (pointeur) (entre [] le nbre de cases à mettre à l'intérieur)
@@ -44,6 +45,11 @@ int main(int argc, const char * argv[]) {
         tableau[i] = 0;
         printf("Remise à zéro %d. \n", tableau[i]);
     }
+    //
+    //
+    //
+    //
+    //
     
     // Tableau à taille dynamique (version C99)
     int tailleTableau = 2;
@@ -56,8 +62,18 @@ int main(int argc, const char * argv[]) {
     printf("\nPremière valeur de array : %d \n \n", *array);
     //
 
+    // Autre initialisation
+    int pair[4] = {2, 4, 6, 8}, u = 0; // Déclaration du tableau et de son contenu
     
-    
+    for(u = 0; u < 4; u++) {
+        printf("Autre initialisation : %d \n", pair[u]);
+    }
+    // Remise à zéro
+    for(u = 0; u < 4; u++) {
+        pair[u] = 0;
+        printf("Remise à zéro : %d \n", pair [u]);
+    }
+    //
     
     
     printf("\n \n");
