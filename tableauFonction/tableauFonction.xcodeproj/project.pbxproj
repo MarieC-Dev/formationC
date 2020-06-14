@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		024C7FA324961FD0005C5BCA /* tableauFonction */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tableauFonction; sourceTree = BUILT_PRODUCTS_DIR; };
 		024C7FA624961FD0005C5BCA /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		024C7FAD24962ECE005C5BCA /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				024C7FA624961FD0005C5BCA /* main.c */,
+				024C7FAD24962ECE005C5BCA /* Header.h */,
 			);
 			path = tableauFonction;
 			sourceTree = "<group>";
