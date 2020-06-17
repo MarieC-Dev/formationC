@@ -10,6 +10,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "Header.h" // => DEFINIR DES STRUCTURES
+#include "enumeration.h" // => DEFINIR DES STRUCTURES
 
 void initialiserCoordonnees(Coordonnees *fonction);
 
@@ -46,15 +47,36 @@ int main(int argc, const char * argv[]) {
     
     // Envoie d'une structure à une fonction
     Coordonnees fonctionPoint;
+    Coordonnees monPoint;
+    Coordonnees *pointeur = &monPoint;
+    
+    monPoint.x = 10; // .x : pour variable
+    pointeur->x = 10; // ->x : pour pointeur
     
     initialiserCoordonnees(&fonctionPoint);
+    
+    // Enumération
+    Volume musique = MOYEN;
+    
+    if (musique == FAIBLE) {
+        printf("Le voulume est FAIBLE. \n ");
+    } else if (musique == MOYEN) {
+        printf("Le volume est MOYEN");
+    } else {
+        printf("Le volume est FORT");
+    }
+    
     
     return 0;
 }
 
+// FONCTION : mettre tous les éléments de la structure à 0
 void initialiserCoordonnees(Coordonnees *point) {
-    // Ne pas oublier les () car le * ne s'applique qu'à point et non à x ou y
-    (*point).x = 0;
-    (*point).y = 0;
+    // Méthode (raccourci très utilisé) ne marchant que sur des variables de structure
+    point->x = 0;
+    point->y = 0;
+    // Ne pas oublier les () pour tout englober. Le point de séparation s'applique sur le mot point et non sur *point en entier.
+    /*(*point).x = 0;
+    (*point).y = 0;*/
     printf("Adresse de \"point\" : %p \n \n", &point);
 }
