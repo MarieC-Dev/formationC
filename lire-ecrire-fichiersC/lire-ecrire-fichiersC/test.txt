@@ -1,0 +1,2 @@
+Salut les copains !
+J'écris dans le fichier test.txt. Ceci est un test.

@@ -25,8 +25,7 @@
 /* Begin PBXFileReference section */
 		02B50F58249AA0BF00073975 /* lire-ecrire-fichiersC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "lire-ecrire-fichiersC"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B50F5B249AA0BF00073975 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		02B50F63249AB96400073975 /* test.exe */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.exe; sourceTree = "<group>"; };
-		02B50F67249ABC2500073975 /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		02B50F6C249BE9E200073975 /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				02B50F5B249AA0BF00073975 /* main.c */,
-				02B50F67249ABC2500073975 /* test.txt */,
-				02B50F63249AB96400073975 /* test.exe */,
+				02B50F6C249BE9E200073975 /* test.txt */,
 			);
 			path = "lire-ecrire-fichiersC";
 			sourceTree = "<group>";

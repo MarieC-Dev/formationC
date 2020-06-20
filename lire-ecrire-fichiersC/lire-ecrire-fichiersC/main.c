@@ -12,25 +12,60 @@
 
 // PROTOTYPE
 // Ouverture
-FILE* fopen(const char* nomDuFichier, const char* modeOuverture);
+//FILE* fopen(const char* nomDuFichier, const char* modeOuverture);
 // Fermeture
-int fclose(FILE* pointeurSurFichier);
+//int fclose(FILE* pointeurSurFichier);
+// Écrire un caractère dans un fichier
+//int fputc(int caractere, FILE* pointeurCaractere);
+// Écrire une chaine
+//char* fputs(const char* chaine, FILE* pointeurChaine);
+// Lire un caractère
+//int fgetc(FILE* pointeurReadCaract);
+// Lire une chaine
+
+
 
 int main(int argc, const char * argv[]) {
     
     FILE* fichier = NULL;
+    fichier = fopen("/Users/costa/desktop/C/lire-ecrire-fichiersC/lire-ecrire-fichiersC/test.txt", "r+"); // paramètre : nom du fichier, r+ : lecture et écriture (ou  w : écriture)
     
-    fichier = fopen("test.txt", "r+"); // paramètre : nom du fichier, r+ : lecture et écriture
+    // DECLARER LES VARIABLES DU FICHIER
+    // Variable fgetc
+    int caractereActuel = 0;
+    //
     
-    // Test d'ouverture du fichier (si non écrit le fichier n'existe pas)
+    /* ========================================================== */
+        
+    // TEST OUVERTURE DU FICHIER
     if (fichier != NULL) {
-        printf("Possibilité d'écrire et de lire le fichier. \n");
-        // On peut lire et écrire dans le fichier
-        fclose(fichier);
+        printf("Fichier ouvert. \n\n");
     } else {
-        printf("Impossible d'ouvrir le fichier test.txt. \n");
+        //printf("Impossible d'ouvrir le fichier test.txt. \n \n");
+        exit(1);
     }
     //
+    
+    /* ========================================================== */
+    
+    // LIRE UN CARACTERE
+    printf("= LIRE UN CARACTERE (en boucle)\n");
+    if (fichier != NULL) {
+        while( caractereActuel != EOF ){
+            caractereActuel = fgetc(fichier); // On lit le caractère
+            printf("%c", caractereActuel); // On l'affiche
+        }
+        fclose(fichier);
+    } else {
+        printf("Impossible d'ouvrir le fichier test.txt. \n \n");
+    }
+    //
+    
+    /* ========================================================== */
+    
+    // LIRE UNE CHAINE
+    
+    
     
     printf("\n\n");
     return 0;
