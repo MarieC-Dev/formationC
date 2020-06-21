@@ -10,14 +10,16 @@
 #include <stdlib.h>
 #include <string.h>
 
+// define fgets
 #define TAILLE_MAX 1000 // Taille du tableau à 1000
 
 /*
  PROTOTYPE DES FONCTIONS :
-    • fopen :
+ =========================
+    • FOPEN :
     FILE* fopen(const char *pointeurFichier, const char *modeOuverture);
         -> <variableDuFichierAOuvrir> = fopen("<fichier.extension>", "<mode lecture/écriture>");
-    • fclose :
+    • FCLOSE :
     int fclose(FILE *pointeurFichier); <pointeur sur le fichier à fermer>
     
     • FPUTC (écrire un caractère à la fois) :
@@ -27,19 +29,34 @@
     char* fputs(const char *chaine, FILE *pointeurFichier);
         -> fputs();
  
-    • FGETC (lire un caractère à la fois
+    • FGETC (lire un caractère à la fois)
     int fgetc(FILE *pointeurFichier);
         -> variable = fgetc(*pointeurFichier);
- 
     • FGETS (lire une chaîne (une ligne jusqu'au premier \n) )
     char* fgets(char *chaine, int nbreDeCaractereALire, FILE *pointeurFichier);
         -> fgets(*chaine, TAILLE_MAX, *pointeurFichier);
  
+    • FTELL (indique la position du curseur dans le fichier)
+    long ftell(FILE *pointeurFichier);
+        -> ftell(fichier);
+    • FSEEK (positionner le curseur dans le fichier)
+    int fseek(FILE *pointeurFichier, long deplacement, int origine);
+        Exemple :
+            Curseur déplacé de deux crans après le début
+        -> fseek(fichier, 2, SEEK_SET);
+            Curseur déplacé de quatre crans avant la position courante
+        -> fseek(fichier, -4, SEEK_CUR);
+            Curseur déplacé à la fin du fichier
+        -> fseek(fichier, 0, SEEK_END);
+    • REWIND (retour au début du fichier)
+        void rewind(FILE *pointeurFichier)
+        
  
  
     Ici le nom du pointeur du fichier sera fichier
  */
 
+// MAIN
 int main(int argc, const char * argv[]) {
     
     FILE *fichier = NULL;
@@ -55,6 +72,8 @@ int main(int argc, const char * argv[]) {
     //int lireChaine = 0;
         // Variable fscanf
     int score[3] = {15, 20, 30};
+        // Variable ftell
+    long position = 0;
     /* ========================================================== */
     //
         
@@ -133,15 +152,25 @@ int main(int argc, const char * argv[]) {
     // AUTRE FONCTION DE LECTURE
     if (fichier != NULL) {
         fscanf(fichier,"%d %d %d", &score[0], &score[1], &score[2]);
-        printf("Les meilleurs scores sont : %d %d %d. \n", score[0], score[1], score[2]);
+        printf("Les meilleurs scores sont : %d %d %d. \n\n\n\n", score[0], score[1], score[2]);
     }
     /* ========================================================== */
     //
     
+    // POSITION DU CURSEUR
+    if (fichier != NULL) {
+        position = ftell(fichier);
+        printf("Position du curseur : %ld. \n", position);
+    } //
+    /* ========================================================== */
+    //
+    
+    
+    
     /* ========================================================== */
     //
     // Saut de ligne
-    printf("\n");
+    printf("\n\n");
     // Fermer le fichier
     fclose(fichier);
     // Fin de main
