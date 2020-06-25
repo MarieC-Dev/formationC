@@ -77,10 +77,10 @@ int main(int argc, const char * argv[]) {
         for (i = 0; i < nbreAmis; i++) {
             printf("Quel âge a ton ami(e) numéro %d ? \n", i + 1);
             scanf("%d", &ageAmis[i]);
-            printf("Ton ami(e) a %d ans. \n\n", *ageAmis);
+            printf("Ton ami(e) a %d ans. \n\n", ageAmis[i]);
         }
         
-        printf("\n\nVos amis ont les âges suivants : \n");
+        printf("\nVos amis ont les âges suivants : \n");
         for (i = 0; i < nbreAmis; i++) {
             printf("%d ans \n", ageAmis[i]);
         }
